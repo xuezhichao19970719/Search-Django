@@ -1,0 +1,55 @@
+﻿#进虚拟环境
+cd E:\python笔记\搜索网站
+venv\Scripts\activate
+cd 我的网站
+
+cd E:\scrapyspider
+env\Scripts\activate
+cd ArticleSpider
+
+#本地测试
+scrapy shell http://blog.jobbole.com/all-posts/
+scrapy shell http://blog.jobbole.com/114496/
+
+#开es
+E:\scrapyspider\elasticsearch-rtf-master\bin\elasticsearch.bat
+cd E:\scrapyspider\elasticsearch-rtf-master\elasticsearch-head-master
+cnpm run start
+E:\scrapyspider\kibana-5.1.2-windows-x86\bin\kibana.bat
+
+#开启web服务
+python manage.py runserver
+
+#shell管理模式
+python manage.py shell
+
+#修改models.py后，迁移数据库
+python manage.py makemigrations
+python manage.py migrate
+
+#开启ssh服务
+sudo service ssh tart
+
+#ssh登陆
+ssh root@117.43.121.34 -p 22
+
+#启动uwsgi
+uwsgi --ini /home/mysite_uwsgi/mysite.ini
+
+#启动nginx
+service nginx restart
+
+#启动redis
+service redis-server restart
+
+#linux子系统路径
+C:\Users\76736\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
+
+#ssh密钥
+Creating SSH2 RSA key; this may take some time ...
+2048 SHA256:vnMGIiqwAxiRXfCICJG04+BUDuPBNaMPoVkJC37sZHU root@DESKTOP-C2UR6E1 (RSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 SHA256:w0JSCGo4Z018rkhxqLJoJGBlmCc/kwG4pxCpDiiSoxU root@DESKTOP-C2UR6E1 (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 SHA256:FVMZk66NHyJBpitXIM2vfSXPd3UZOuRpvtOMm3L39gw root@DESKTOP-C2UR6E1 (ED25519)
+invoke-rc.d: could not determine current runlevel
